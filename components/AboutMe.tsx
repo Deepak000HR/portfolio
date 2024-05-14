@@ -1,9 +1,12 @@
 import { CheckIcon } from "@heroicons/react/16/solid";
 import React from "react";
 
-const AboutMe = () => {
+interface Props {
+  id: string;
+}
+const AboutMe = ({ id }:Props) => {
   return (
-    <div className="mt-[-4rem] bg-black pb-[3rem]">
+    <div id={id} className="mt-[-4rem] bg-black pb-[3rem]">
       <div className="w-[80%] pt-[5rem] sm:pt-[7rem] md:pt-[10rem] mx-auto grid items-center grid-cols-1 lg:grid-cols-2 gap-[2rem]">
         <div>
           <p className="heading__mini">About Me</p>
@@ -12,11 +15,9 @@ const AboutMe = () => {
             Bussiness
           </h1>
           <p className="text-[15px] mt-[1.3rem] text-white opacity-75">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            delectus deserunt quas error adipisci laborum, autem perspiciatis
-            fugit tempore fugiat nisi sit. Corrupti voluptates expedita numquam
-            provident deleniti assumenda autem reprehenderit. Esse earum hic
-            error!
+            As a professional clerk, I streamline your business operations with
+            precision and dedication. From meticulous data entry to adept
+            accounting, I ensure your business functions seamlessly.
           </p>
           <div className="mt-[2rem] space-y-3">
             <div className="flex items-center space-x-4">

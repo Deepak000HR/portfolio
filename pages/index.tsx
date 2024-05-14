@@ -9,13 +9,24 @@ const HomePage = () => {
   const showNavHandler = () => setShowNav(true);
   const closeNavHandler = () => setShowNav(false);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="overflow-hidden ">
-      <NavMobile showNav={showNav} closeNav={closeNavHandler} />
-      <Nav openNav={showNavHandler} />
+      <NavMobile
+        showNav={showNav}
+        closeNav={closeNavHandler}
+        scrollToSection={scrollToSection}
+      />
+      <Nav openNav={showNavHandler} scrollToSection={scrollToSection} />
 
-      <Hero />
-      <AboutMe />
+      <Hero id="home" />
+      <AboutMe id="about" />
       {/* Services */}
     </div>
   );

@@ -3,9 +3,10 @@ import React, { useEffect, useState } from "react";
 
 interface Props {
   openNav: () => void;
+  scrollToSection: (id: string) => void;
 }
 
-const Nav = ({ openNav }: Props) => {
+const Nav = ({ openNav, scrollToSection }: Props) => {
   const [navSticky, setNavSticky] = useState(false);
   useEffect(() => {
     const handler = () => {
@@ -28,27 +29,27 @@ const Nav = ({ openNav }: Props) => {
         </div>
         <ul className="md:flex hidden items-center space-x-10">
           <li>
-            <a className="nav__link" href="#">
+            <a className="nav__link"  onClick={() => scrollToSection("home")} >
               Home
             </a>
           </li>
           <li>
-            <a className="nav__link" href="#">
+            <a className="nav__link" onClick={() => scrollToSection("about")} >
               About
             </a>
           </li>
           <li>
-            <a className="nav__link" href="#">
+            <a className="nav__link" onClick={() => scrollToSection("services")} >
               Services
             </a>
           </li>
           <li>
-            <a className="nav__link" href="#">
+            <a className="nav__link" onClick={() => scrollToSection("blog")} >
               Blog
             </a>
           </li>
           <li>
-            <a className="nav__link" href="#">
+            <a className="nav__link" onClick={() => scrollToSection("contact")} >
               Contact
             </a>
           </li>

@@ -4,9 +4,10 @@ import React from "react";
 interface Props {
   showNav: boolean;
   closeNav: () => void;
+  scrollToSection: (id: string) => void;
 }
 
-const NavMobile = ({ closeNav, showNav }: Props) => {
+const NavMobile = ({ closeNav, showNav, scrollToSection }: Props) => {
   const navOpenStyle = showNav ? "translate-x-0" : "translate-x-[-100%]";
   return (
     <div>
@@ -17,27 +18,47 @@ const NavMobile = ({ closeNav, showNav }: Props) => {
         className={`text-white ${navOpenStyle} fixed flex items-center flex-col justify-center h-[100%] transform transition-all duration-300 delay-300 w-[60%] bg-red-600 space-y-14 z-[10006]`}
       >
         <li>
-          <a className="nav__link text-[25px] sm:text-[30px]" href="#">
+          <a
+            className="nav__link text-[25px] sm:text-[30px]"
+            onClick={() => scrollToSection("home")}
+            // href="#"
+          >
             Home
           </a>
         </li>
         <li>
-          <a className="nav__link text-[25px] sm:text-[30px]" href="#">
+          <a
+            className="nav__link text-[25px] sm:text-[30px]"
+            onClick={() => scrollToSection("about")}
+            // href="#"
+          >
             About
           </a>
         </li>
         <li>
-          <a className="nav__link text-[25px] sm:text-[30px]" href="#">
+          <a
+            className="nav__link text-[25px] sm:text-[30px]"
+            onClick={() => scrollToSection("services")}
+            // href="#"
+          >
             Services
           </a>
         </li>
         <li>
-          <a className="nav__link text-[25px] sm:text-[30px]" href="#">
+          <a
+            className="nav__link text-[25px] sm:text-[30px]"
+            onClick={() => scrollToSection("blog")}
+            // href="#"
+          >
             Blog
           </a>
         </li>
         <li>
-          <a className="nav__link text-[25px] sm:text-[30px]" href="#">
+          <a
+            className="nav__link text-[25px] sm:text-[30px]"
+            onClick={() => scrollToSection("contact")}
+            // href="#"
+          >
             Contact
           </a>
         </li>
