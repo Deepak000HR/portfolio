@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
           <div className="hidden md:block">
             <Image
-              src="/images/hero.png"
+              src="https://raw.githubusercontent.com/Deepak000HR/portfolio/main/public/images/hero.png"
               alt="hero"
               width={600}
               height={600}
