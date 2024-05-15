@@ -1,5 +1,6 @@
+import sections from "@/constants/constant";
 import { XMarkIcon } from "@heroicons/react/16/solid";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 interface Props {
   showNav: boolean;
@@ -8,8 +9,36 @@ interface Props {
   activeSection: string;
 }
 
-const NavMobile = ({ closeNav, showNav, scrollToSection,activeSection }: Props) => {
+const NavMobile = ({
+  closeNav,
+  showNav,
+  scrollToSection,
+  activeSection,
+}: Props) => {
   const navOpenStyle = showNav ? "translate-x-0" : "translate-x-[-100%]";
+  const handleClick = (id: string) => {
+    closeNav();
+
+    scrollToSection(id); // Delay to ensure the nav is closed before scrolling
+  };
+
+  // dummy
+
+  const [navSticky, setNavSticky] = useState(false);
+  useEffect(() => {
+    const handler = () => {
+      if (window.scrollY >= 90) {
+        setNavSticky(true);
+      }
+      if (window.scrollY <= 90) {
+        setNavSticky(false); //
+      }
+    };
+    window.addEventListener("scroll", handler);
+  }, []);
+
+  // dummy
+
   return (
     <div>
       <div
@@ -18,7 +47,8 @@ const NavMobile = ({ closeNav, showNav, scrollToSection,activeSection }: Props) 
       <ul
         className={`text-white ${navOpenStyle} fixed flex items-center flex-col justify-center h-[100%] transform transition-all duration-300 delay-300 w-[60%] bg-red-600 space-y-14 z-[10006]`}
       >
-        <li>
+        {/* comment */}
+        {/* <li>
           <a
             className="nav__link text-[25px] sm:text-[30px]"
             onClick={() => {
@@ -77,7 +107,37 @@ const NavMobile = ({ closeNav, showNav, scrollToSection,activeSection }: Props) 
           >
             Contact
           </a>
-        </li>
+        </li> */}
+        {/* comment */}
+
+        {/* {["home", "about", "services", "blog", "contact"].map((section) => (
+          <li key={section}>
+            <a
+              className={`nav__link text-[25px] sm:text-[30px] ${
+                activeSection === section ? "after:scale-x-100" : ""
+              }`}
+              onClick={() => {
+                closeNav();
+                scrollToSection(section);
+              }}
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </a>
+          </li>
+        ))} */}
+
+        {sections.map((section) => (
+          <li key={section}>
+            <a
+              className={`nav__link  ${
+                activeSection === section ? "after:scale-x-100" : ""
+              } text-[25px] sm:text-[30px] `}
+              onClick={() => handleClick(section)}
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </a>
+          </li>
+        ))}
         <XMarkIcon
           onClick={closeNav}
           tabIndex={0}

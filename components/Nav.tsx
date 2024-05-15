@@ -1,3 +1,4 @@
+import sections from "@/constants/constant";
 import { Bars3BottomLeftIcon } from "@heroicons/react/16/solid";
 import React, { useEffect, useState } from "react";
 
@@ -7,7 +8,7 @@ interface Props {
   activeSection: string;
 }
 
-const Nav = ({ openNav, scrollToSection ,activeSection}: Props) => {
+const Nav = ({ openNav, scrollToSection, activeSection }: Props) => {
   const [navSticky, setNavSticky] = useState(false);
   useEffect(() => {
     const handler = () => {
@@ -22,7 +23,9 @@ const Nav = ({ openNav, scrollToSection ,activeSection}: Props) => {
   }, []);
   const stickyStyle = navSticky ? "bg-[#212428] shadow-gray-900 shadow-sm" : "";
   return (
-    <div className={`fixed w-[100%] ${stickyStyle} transition-all duration-300 z-[1000]`}>
+    <div
+      className={`fixed w-[100%] ${stickyStyle} transition-all duration-300 z-[1000]`}
+    >
       <div className="flex items-center h-[12vh] justify-between w-[80%] mx-auto">
         <div className="font-logo text-white text-[18px]">
           <span className="text-[30px] md:text-[40px] text-yellow-400">D</span>
@@ -54,10 +57,12 @@ const Nav = ({ openNav, scrollToSection ,activeSection}: Props) => {
               Contact
             </a>
           </li> */}
-             {["home", "about", "services", "blog", "contact"].map((section) => (
+          {sections.map((section) => (
             <li key={section}>
               <a
-                className={`nav__link ${activeSection === section ? "after:scale-x-100" : ""}`}
+                className={`nav__link ${
+                  activeSection === section ? "after:scale-x-100" : ""
+                }`}
                 onClick={() => scrollToSection(section)}
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
