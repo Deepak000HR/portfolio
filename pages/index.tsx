@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import NavMobile from "@/components/NavMobile";
 import Services from "@/components/Services";
+import Skills from "@/components/Skills";
 import React, { useState } from "react";
 
 const HomePage = () => {
@@ -28,7 +29,9 @@ const HomePage = () => {
 
       <Hero id="home" />
       <AboutMe id="about" />
-      < Services id="services"/>
+      <Services id="services" />
+      <Skills id="services" />
+      {/* todo rename id for Skills*/}
     </div>
   );
 };

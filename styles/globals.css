@@ -59,6 +59,11 @@
   transition: all 0.8s;
 }
 
+.custom__service:hover:before {
+  clip-path: circle(1000px at 95% 4%);
+  z-index: -1000;
+}
+
 /* @layer components {
   .nav__link {
     @apply relative text-x1 w-fit block;

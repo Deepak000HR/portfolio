@@ -20,7 +20,10 @@ const NavMobile = ({ closeNav, showNav, scrollToSection }: Props) => {
         <li>
           <a
             className="nav__link text-[25px] sm:text-[30px]"
-            onClick={() => scrollToSection("home")}
+            onClick={() => {
+              closeNav();
+              scrollToSection("home");
+            }}
             // href="#"
           >
             Home
@@ -29,7 +32,10 @@ const NavMobile = ({ closeNav, showNav, scrollToSection }: Props) => {
         <li>
           <a
             className="nav__link text-[25px] sm:text-[30px]"
-            onClick={() => scrollToSection("about")}
+            onClick={() => {
+              closeNav();
+              scrollToSection("about");
+            }}
             // href="#"
           >
             About
@@ -38,7 +44,10 @@ const NavMobile = ({ closeNav, showNav, scrollToSection }: Props) => {
         <li>
           <a
             className="nav__link text-[25px] sm:text-[30px]"
-            onClick={() => scrollToSection("services")}
+            onClick={() => {
+              closeNav();
+              scrollToSection("services");
+            }}
             // href="#"
           >
             Services
@@ -47,7 +56,10 @@ const NavMobile = ({ closeNav, showNav, scrollToSection }: Props) => {
         <li>
           <a
             className="nav__link text-[25px] sm:text-[30px]"
-            onClick={() => scrollToSection("blog")}
+            onClick={() => {
+              closeNav();
+              scrollToSection("blog");
+            }}
             // href="#"
           >
             Blog
@@ -56,7 +68,10 @@ const NavMobile = ({ closeNav, showNav, scrollToSection }: Props) => {
         <li>
           <a
             className="nav__link text-[25px] sm:text-[30px]"
-            onClick={() => scrollToSection("contact")}
+            onClick={() => {
+              closeNav();
+              scrollToSection("contact");
+            }}
             // href="#"
           >
             Contact
