@@ -5,9 +5,12 @@ import Image from "next/image";
 interface Props {
   id: string;
 }
-const Hero = ({ id }:Props) => {
+const Hero = ({ id }: Props) => {
   return (
-    <div id={id} className="w-[100vw] pt-[4vh] md:pt-[12vh] h-[85vh] md:h-[100vh] custom-bg">
+    <div
+      id={id}
+      className="w-[100vw] pt-[4vh] md:pt-[12vh] h-[85vh] md:h-[100vh] custom-bg"
+    >
       <div className="flex justify-center flex-col w-[80%] h-[100%] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[3rem] items-center">
           <div>
@@ -40,7 +43,7 @@ const Hero = ({ id }:Props) => {
           </div>
           <div className="hidden md:block">
             <Image
-              src="https://raw.githubusercontent.com/Deepak000HR/portfolio/main/public/images/hero.png"
+              src="./images/hero.png"
               alt="hero"
               width={600}
               height={600}
