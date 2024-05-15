@@ -1,9 +1,10 @@
 import React from "react";
 import ServiceCard from "./Helper/ServiceCard";
+
 interface Props {
   id: string;
 }
-const Services = ({ id }: Props) => {
+const Services = ({ id }:Props) => {
   return (
     <div id={id} className="pt-[5rem] pb-[3rem] bg-[#0b0c13]">
       <div className="text-center">
