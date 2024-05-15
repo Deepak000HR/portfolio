@@ -3,9 +3,17 @@ import {
   CommandLineIcon,
   ServerIcon,
   CodeBracketIcon,
+  CursorArrowRippleIcon,
+  CalculatorIcon,
+  LanguageIcon,
+  TableCellsIcon,
   CursorArrowRaysIcon,
+  VariableIcon,
   RocketLaunchIcon,
+  AcademicCapIcon,
+  CircleStackIcon,
   BugAntIcon,
+  PrinterIcon,
 } from "@heroicons/react/16/solid";
 interface Props {
   title: string;
@@ -13,12 +21,12 @@ interface Props {
 }
 
 const iconMapping = {
-  "01": CommandLineIcon,
-  "02": ServerIcon,
-  "03": CodeBracketIcon,
-  "04": CursorArrowRaysIcon,
-  "05": RocketLaunchIcon,
-  "06": BugAntIcon,
+  "01": PrinterIcon,
+  "02": TableCellsIcon,
+  "03": CalculatorIcon,
+  "04": LanguageIcon,
+  "05": CircleStackIcon,
+  "06": AcademicCapIcon,
 };
 const ServiceCard = ({ title, num }: Props) => {
   const IconComponent =
@@ -34,7 +42,9 @@ const ServiceCard = ({ title, num }: Props) => {
         omnis asperiores eos inventore. Quas numquam laudantium animi eligendi
         nesciunt!
       </p>
-      <p className="text-white text-[1.6rem] font-bold absolute top-3 right-4">{num}</p>
+      <p className="text-white text-[1.6rem] font-bold absolute top-3 right-4">
+        {num}
+      </p>
     </div>
   );
 };

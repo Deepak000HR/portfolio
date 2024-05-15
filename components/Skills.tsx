@@ -28,57 +28,57 @@ const Skills = ({ id }: Props) => {
             <div>
               <SkillCard
                 title="Excel"
-                image="https://excel.com"
-                percent="90%"
+                image="https://cdn-icons-png.flaticon.com/128/732/732220.png"
+                percent="40%"
               />
             </div>
             <div>
               <SkillCard
-                title="Excel"
-                image="https://excel.com"
-                percent="90%"
+                title="Tally"
+                image="https://5.imimg.com/data5/SELLER/Default/2021/4/WV/MU/BB/127445480/tally-prime-logo-png-500x500.png"
+                percent="50%"
               />
             </div>
             <div>
               <SkillCard
-                title="Excel"
-                image="https://excel.com"
-                percent="90%"
+                title="Markdown"
+                image="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/208px-Markdown-mark.svg.png"
+                percent="30%"
               />
             </div>
             <div>
               <SkillCard
-                title="Excel"
-                image="https://excel.com"
-                percent="90%"
+                title="Online Communication (Zoom + Meet)"
+                image="https://img.icons8.com/?size=48&id=82ewLsKHYlLc&format=png"
+                percent="80%"
               />
             </div>
             <div>
               <SkillCard
-                title="Excel"
-                image="https://excel.com"
-                percent="90%"
+                title="Time Management"
+                image="https://img.icons8.com/?size=48&id=GtBUD8iQjfHT&format=png"
+                percent="60%"
               />
             </div>
             <div>
               <SkillCard
-                title="Excel"
-                image="https://excel.com"
-                percent="90%"
+                title="Customer Service"
+                image="https://icons8.com/icon/t0Ue6D8TLQf0/external-chat-bubble-chat-others-inmotus-design-4"
+                percent="70%"
               />
             </div>
             <div>
               <SkillCard
-                title="Excel"
-                image="https://excel.com"
-                percent="90%"
+                title="Photo Editing"
+                image="https://img.icons8.com/?size=50&id=11113&format=png"
+                percent="50%"
               />
             </div>
             <div>
               <SkillCard
-                title="Excel"
-                image="https://excel.com"
-                percent="90%"
+                title="Cooking"
+                image="https://img.icons8.com/?size=48&id=wC52pYWiR2Ub&format=png"
+                percent="30%"
               />
             </div>
           </div>
