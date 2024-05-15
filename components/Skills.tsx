@@ -48,7 +48,7 @@ const Skills = ({ id }: Props) => {
             </div>
             <div>
               <SkillCard
-                title="Online Communication (Zoom + Meet)"
+                title="Online Communication"
                 image="https://img.icons8.com/?size=48&id=82ewLsKHYlLc&format=png"
                 percent="80%"
               />
@@ -63,7 +63,7 @@ const Skills = ({ id }: Props) => {
             <div>
               <SkillCard
                 title="Customer Service"
-                image="https://icons8.com/icon/t0Ue6D8TLQf0/external-chat-bubble-chat-others-inmotus-design-4"
+                image="https://img.icons8.com/?size=67&id=t0Ue6D8TLQf0&format=png"
                 percent="70%"
               />
             </div>
