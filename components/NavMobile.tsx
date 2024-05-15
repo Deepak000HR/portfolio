@@ -5,9 +5,10 @@ interface Props {
   showNav: boolean;
   closeNav: () => void;
   scrollToSection: (id: string) => void;
+  activeSection: string;
 }
 
-const NavMobile = ({ closeNav, showNav, scrollToSection }: Props) => {
+const NavMobile = ({ closeNav, showNav, scrollToSection,activeSection }: Props) => {
   const navOpenStyle = showNav ? "translate-x-0" : "translate-x-[-100%]";
   return (
     <div>

@@ -4,9 +4,10 @@ import React, { useEffect, useState } from "react";
 interface Props {
   openNav: () => void;
   scrollToSection: (id: string) => void;
+  activeSection: string;
 }
 
-const Nav = ({ openNav, scrollToSection }: Props) => {
+const Nav = ({ openNav, scrollToSection ,activeSection}: Props) => {
   const [navSticky, setNavSticky] = useState(false);
   useEffect(() => {
     const handler = () => {
@@ -28,7 +29,7 @@ const Nav = ({ openNav, scrollToSection }: Props) => {
           EEPAK
         </div>
         <ul className="md:flex hidden items-center space-x-10">
-          <li>
+          {/* <li>
             <a className="nav__link"  onClick={() => scrollToSection("home")} >
               Home
             </a>
@@ -52,7 +53,17 @@ const Nav = ({ openNav, scrollToSection }: Props) => {
             <a className="nav__link" onClick={() => scrollToSection("contact")} >
               Contact
             </a>
-          </li>
+          </li> */}
+             {["home", "about", "services", "blog", "contact"].map((section) => (
+            <li key={section}>
+              <a
+                className={`nav__link ${activeSection === section ? "after:scale-x-100" : ""}`}
+                onClick={() => scrollToSection(section)}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </a>
+            </li>
+          ))}
         </ul>
         <Bars3BottomLeftIcon
           onClick={openNav}
