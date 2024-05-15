@@ -1,6 +1,6 @@
 import sections from "@/constants/constant";
 import { XMarkIcon } from "@heroicons/react/16/solid";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 interface Props {
   showNav: boolean;
@@ -15,6 +15,7 @@ const NavMobile = ({
   scrollToSection,
   activeSection,
 }: Props) => {
+  console.log("activeSection:", activeSection);
   const navOpenStyle = showNav ? "translate-x-0" : "translate-x-[-100%]";
   const handleClick = (id: string) => {
     closeNav();
@@ -24,18 +25,18 @@ const NavMobile = ({
 
   // dummy
 
-  const [navSticky, setNavSticky] = useState(false);
-  useEffect(() => {
-    const handler = () => {
-      if (window.scrollY >= 90) {
-        setNavSticky(true);
-      }
-      if (window.scrollY <= 90) {
-        setNavSticky(false); //
-      }
-    };
-    window.addEventListener("scroll", handler);
-  }, []);
+  // const [navSticky, setNavSticky] = useState(false);
+  // useEffect(() => {
+  //   const handler = () => {
+  //     if (window.scrollY >= 90) {
+  //       setNavSticky(true);
+  //     }
+  //     if (window.scrollY <= 90) {
+  //       setNavSticky(false); //
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handler);
+  // }, []);
 
   // dummy
 

@@ -1,24 +1,18 @@
 import React from "react";
 import {
   CommandLineIcon,
-  ServerIcon,
-  CodeBracketIcon,
-  CursorArrowRippleIcon,
   CalculatorIcon,
   LanguageIcon,
   TableCellsIcon,
-  CursorArrowRaysIcon,
-  VariableIcon,
-  RocketLaunchIcon,
   AcademicCapIcon,
   CircleStackIcon,
-  BugAntIcon,
   PrinterIcon,
 } from "@heroicons/react/16/solid";
 interface Props {
   title: string;
   num: string;
   subTitle: string;
+  // id: string;
 }
 
 const iconMapping = {

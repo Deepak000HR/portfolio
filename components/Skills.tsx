@@ -6,13 +6,13 @@ interface Props {
 }
 const Skills = ({ id }: Props) => {
   return (
-    <div id={id} className="pt-[5rem] pb-[3rem] bg-black ">
+    <div className="pt-[5rem] pb-[3rem] bg-black ">
       <div className="grid w-[80%] mx-auto grid-cols-1 lg:grid-cols-7 gp-[2rem] items-center">
-        <div className="col-span-3">
+        <div id={id} className="col-span-3">
           <p className="heading__mini">My Skills</p>
           <h1 className="heading__primary">
-            Let's Explore Popular{" "}
-            <span className="text-yellow-300">Skills</span> & Experience
+            Let's Explore Popular
+            <span className="text-yellow-300">Skills</span>& Experience
           </h1>
           <p className="text-[15px] mb-[1.5rem] text-white opacity-70 mt-[1.5rem]">
             Over the years, I've honed a diverse set of skills across various

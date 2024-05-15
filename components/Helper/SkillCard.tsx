@@ -5,8 +5,9 @@ interface Props {
   title: string;
   image: string;
   percent: string;
+  // id: string;
 }
-const SkillCard = ({ title, image, percent }: Props) => {
+const SkillCard = ({ title, image, percent,}: Props) => {
   return (
     <div className="p-6 hover:bg-red-700 duration-300 transition-all cursor-pointer text-center rounded-lg bg-gray-900">
       <Image
@@ -17,7 +18,9 @@ const SkillCard = ({ title, image, percent }: Props) => {
         className="object-cover mx-auto"
       />
       <h1 className="text-[18px] mt-[1rem] text-white font-[600]">{title}</h1>
-      <div className="bg-black mt-[1rem] rounded-lg p-2 text-white opacity-40">{percent}</div>
+      <div className="bg-black mt-[1rem] rounded-lg p-2 text-white opacity-40">
+        {percent}
+      </div>
     </div>
   );
 };

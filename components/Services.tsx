@@ -4,12 +4,13 @@ import ServiceCard from "./Helper/ServiceCard";
 interface Props {
   id: string;
 }
-const Services = ({ id }:Props) => {
+const Services = ({ id }: Props) => {
+  console.log("id prop:", id);
   return (
-    <div id={id} className="pt-[5rem] pb-[3rem] bg-[#0b0c13]">
+    <div className="pt-[5rem] pb-[3rem] bg-[#0b0c13]">
       <div className="text-center">
         <p className="heading__mini">Popular Services</p>
-        <h1 className="heading__primary">
+        <h1 id={id} className="heading__primary">
           My Special <span className="text-yellow-300">Services</span> For You
         </h1>
       </div>

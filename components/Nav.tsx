@@ -9,6 +9,7 @@ interface Props {
 }
 
 const Nav = ({ openNav, scrollToSection, activeSection }: Props) => {
+  console.log("activeSection:", activeSection);
   const [navSticky, setNavSticky] = useState(false);
   useEffect(() => {
     const handler = () => {
