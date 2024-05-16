@@ -2,6 +2,7 @@ import AboutMe from "@/components/AboutMe";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import NavMobile from "@/components/NavMobile";
+import Project from "@/components/Project";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
 import React, { useEffect, useRef, useState } from "react";
@@ -81,11 +82,11 @@ const HomePage = () => {
       <Services id="services" />
       <Skills id="skills" />
       {/* todo rename id for Skills*/}
-      <AboutMe id="blog" />
+      <Project id="project" />
+      <Project id="blog" />
       <AboutMe id="contact" />
     </div>
   );
 };
 
 export default HomePage;
-
