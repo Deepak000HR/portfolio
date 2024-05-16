@@ -43,7 +43,7 @@ const Skills = ({ id }: Props) => {
             <div>
               <SkillCard
                 title="Markdown"
-                image="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/208px-Markdown-mark.svg.png"
+                image="https://img.icons8.com/?size=80&id=uADJvOMNIZPu&format=png"
                 percent="30%"
               />
             </div>
@@ -64,14 +64,14 @@ const Skills = ({ id }: Props) => {
             <div>
               <SkillCard
                 title="Customer Service"
-                image="https://img.icons8.com/?size=67&id=t0Ue6D8TLQf0&format=png"
+                image="https://img.icons8.com/?size=80&id=7iiKCM-cJnQR&format=png"
                 percent="70%"
               />
             </div>
             <div>
               <SkillCard
                 title="Photo Editing"
-                image="https://img.icons8.com/?size=50&id=11113&format=png"
+                image="https://img.icons8.com/?size=64&id=46498&format=png"
                 percent="50%"
               />
             </div>
