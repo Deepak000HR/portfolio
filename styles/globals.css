@@ -28,7 +28,7 @@
   }
 
   .custom-bg {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.811)), url("./images/bg.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.811)), url("https://github.com/Deepak000HR/portfolio/blob/main/public/images/bg.jpg?raw=true");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
