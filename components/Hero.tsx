@@ -51,7 +51,7 @@ const Hero = ({ id }: Props) => {
           </div>
           <div className="hidden md:block">
             <Image
-              src="./images/hero.png"
+              src="./images/deepakhero.png"
               alt="hero"
               width={600}
               height={600}
