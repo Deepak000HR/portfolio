@@ -16,6 +16,8 @@ const Project = ({ id }: Props) => {
       {/* TODO Dynamic by gihub actions */}
       <ProjectCard
         title="Learn MD"
+        subtitle='A Mobile App Developement Learning App , Also Public and Open Source
+        ,Available at Google Play Store with Name "Learn MD"'
         tech1="Flutter"
         tech2="Dart"
         tech3="Markdown"

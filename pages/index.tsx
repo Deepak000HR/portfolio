@@ -2,7 +2,9 @@ import AboutMe from "@/components/AboutMe";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import NavMobile from "@/components/NavMobile";
+import Price from "@/components/Price";
 import Project from "@/components/Project";
+import Reviews from "@/components/Reviews";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
 import React, { useEffect, useRef, useState } from "react";
@@ -85,6 +87,8 @@ const HomePage = () => {
       <Project id="project" />
       <Project id="blog" />
       <AboutMe id="contact" />
+      <Price id="price" />
+      <Reviews id="reviews" />
     </div>
   );
 };
