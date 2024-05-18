@@ -1,4 +1,6 @@
 import AboutMe from "@/components/AboutMe";
+import Blog from "@/components/Blog";
+import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import NavMobile from "@/components/NavMobile";
@@ -85,10 +87,12 @@ const HomePage = () => {
       <Skills id="skills" />
       {/* todo rename id for Skills*/}
       <Project id="project" />
-      <Project id="blog" />
-      <AboutMe id="contact" />
+
       <Price id="price" />
       <Reviews id="reviews" />
+      <Blog id="blog" />
+      <AboutMe id="contact" />
+      <Contact id="contact" />
     </div>
   );
 };

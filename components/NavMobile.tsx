@@ -15,7 +15,7 @@ const NavMobile = ({
   scrollToSection,
   activeSection,
 }: Props) => {
-  console.log("activeSection:", activeSection);
+ 
   const navOpenStyle = showNav ? "translate-x-0" : "translate-x-[-100%]";
   const handleClick = (id: string) => {
     closeNav();
