@@ -15,40 +15,23 @@ const Blog = ({ id }: Props) => {
       <div className="w-[80%] mx-auto pt-[3rem] md:pt-[5rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-[2rem]">
         <div>
           <BlogCard
-            title={"Daily Blog"}
-            comment={"5"}
+            title={"आकाश की लत 😂[ haryanvi chacha ]l funny video 📸 🤪 #comedy #akash #mostpopular #shortsfeed@TEENCHAPRI"}
+            comment={"33"}
             date={"10/May/2024"}
-            image={""}
-            link={""}
+            image={"https://i2.ytimg.com/vi/-taAlsYkTsc/hqdefault.jpg"}
+            link={"https://www.youtube.com/v/-taAlsYkTsc?version=3"}
           />
         </div>
         <div>
           <BlogCard
-            title={"Daily Blog"}
+            title={"Learn MD APP Preview"}
             comment={"5"}
             date={"10/May/2024"}
-            image={""}
-            link={""}
+            image={"https://i2.ytimg.com/vi/mmSYOmrWeGY/hqdefault.jpg"}
+            link={"https://www.youtube.com/v/mmSYOmrWeGY?version=3"}
           />
         </div>
-        <div>
-          <BlogCard
-            title={"Daily Blog"}
-            comment={"5"}
-            date={"10/May/2024"}
-            image={""}
-            link={""}
-          />
-        </div>
-        <div>
-          <BlogCard
-            title={"Daily Blog"}
-            comment={"5"}
-            date={"10/May/2024"}
-            image={""}
-            link={""}
-          />
-        </div>
+       
       </div>
     </div>
   );
