@@ -91,7 +91,6 @@ const HomePage = () => {
       <Price id="price" />
       <Reviews id="reviews" />
       <Blog id="blog" />
-      <AboutMe id="contact" />
       <Contact id="contact" />
     </div>
   );
