@@ -6,8 +6,10 @@ interface Props {
   save: string;
   price: string;
   bg: string;
+  features: string[];
 }
-const PriceCard = ({ plan, save, price, bg }: Props) => {
+
+const PriceCard = ({ plan, save, price, bg,features }: Props) => {
   return (
     <div className="text-center rounded-lg bg-gray-900">
       <div className={`p-6 rounded-t-lg ${bg}`}>
@@ -22,28 +24,22 @@ const PriceCard = ({ plan, save, price, bg }: Props) => {
         </div>
       </div>
       <div className="p-6">
-        <div className="flex items-center space-x-3">
-          <CheckIcon className="w-[1.4rem] h-[1.4rem] text-yellow-400" />
-          <p className="text-[17px] text-white opacity-80">WebHandler</p>
-        </div>
-        <div className="flex items-center mt-[1rem] mb-[1rem] space-x-3">
-          <CheckIcon className="w-[1.4rem] h-[1.4rem] text-yellow-400" />
-          <p className="text-[17px] text-white opacity-80">WebHandler</p>
-        </div>
-        <div className="flex items-center space-x-3">
-          <CheckIcon className="w-[1.4rem] h-[1.4rem] text-yellow-400" />
-          <p className="text-[17px] text-white opacity-80">WebHandler</p>
-        </div>
-        <div className="flex items-center mt-[1rem] mb-[1rem] space-x-3">
-          <CheckIcon className="w-[1.4rem] h-[1.4rem] text-yellow-400" />
-          <p className="text-[17px] text-white opacity-80">WebHandler</p>
-        </div>
-        <div className="flex items-center space-x-3">
-          <CheckIcon className="w-[1.4rem] h-[1.4rem] text-yellow-400" />
-          <p className="text-[17px] text-white opacity-80">WebHandler</p>
-        </div>
+        {features.map((feature, index) => (
+          <div
+            key={index}
+            className={`flex items-center ${
+              index % 2 === 1 ? "mt-[1rem] mb-[1rem]" : ""
+            } space-x-3`}
+          >
+            <CheckIcon className="w-[1.4rem] h-[1.4rem] text-yellow-400" />
+            <p className="text-[17px] text-white opacity-80">{feature}</p>
+          </div>
+        ))}
       </div>
-      <button className="mt-[1.5rem] px-8 py-4 bg-blue-600 text-white block w-[100%] hover:bg-blue-800 transition-all duration-300">
+      <button
+        onClick={() => (window.location.href = "https://wa.me/916376441026")}
+        className="mt-[1.5rem] px-8 py-4 bg-blue-600 text-white block w-[100%] hover:bg-blue-800 transition-all duration-300"
+      >
         Get Started
       </button>
     </div>
