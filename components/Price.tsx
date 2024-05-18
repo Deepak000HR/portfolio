@@ -41,8 +41,7 @@ const Price = ({ id }: Props) => {
             "Invoice Management",
             "Payroll Processing",
             "Financial Reporting",
-            "Tax Preparation",
-            "Intermediate Bookkeeping"
+            "Intermediate Bookkeeping",
           ]}
         />
         <PriceCard
