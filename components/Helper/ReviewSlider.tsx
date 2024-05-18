@@ -42,9 +42,15 @@ const ReviewSlider = () => {
       />
       <ClientReviewCard
         image="https://scontent.fixc8-3.fna.fbcdn.net/v/t1.6435-9/119526191_189149019376225_3116269047404077355_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=RLTucYDS-I4Q7kNvgEE7CF-&_nc_ht=scontent.fixc8-3.fna&oh=00_AYCOiY83S3QA5tduHkPSWFO-E3S9D-lz8Qu9vWPQms6JsA&oe=666FE5D4"
-        user="Nandu"
+        user="Jagdish Sangwan"
         role="stone crushing plant owner."
         feedback="Efficient and reliable service. Deepak is very professional."
+      />
+       <ClientReviewCard
+        image="https://scontent.fixc8-1.fna.fbcdn.net/v/t1.6435-1/152336866_504688190925714_6054430601837434540_n.jpg?stp=dst-jpg_p100x100&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=uGbdY7_7z0UQ7kNvgFq1SmT&_nc_ht=scontent.fixc8-1.fna&oh=00_AYDnCWGC196f4Y82Rn5Bb7Yg7sG0pl6lCsmzxY4YHrb28Q&oe=666FBE71"
+        user="Vijender"
+        role="stone crushing plant owner."
+        feedback="Excellent accounting and bookkeeping skills. Highly recommend!"
       />
     </Carousel>
   );
