@@ -41,8 +41,8 @@ const ReviewSlider = () => {
       />
       <ClientReviewCard
         image="https://avatars.githubusercontent.com/u/87695786?v=4"
-        user="Manish Gautam"
-        role="Flutter Dev."
+        user="Nandu"
+        role="stone crushing plant owner."
       />
     </Carousel>
   );
