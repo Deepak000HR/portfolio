@@ -33,11 +33,16 @@ const Price = ({ id }: Props) => {
           price="25$"
           bg="bg-green-900"
           features={[
+            "Data Entry",
+            "Document Filing",
+            "Client Communication",
+            "Basic Bookkeeping",
+            "Expense Tracking",
             "Invoice Management",
             "Payroll Processing",
             "Financial Reporting",
             "Tax Preparation",
-            "Intermediate Bookkeeping",
+            "Intermediate Bookkeeping"
           ]}
         />
         <PriceCard

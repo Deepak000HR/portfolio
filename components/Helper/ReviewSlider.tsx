@@ -38,11 +38,13 @@ const ReviewSlider = () => {
         image="https://avatars.githubusercontent.com/u/87695786?v=4"
         user="Manish Gautam"
         role="Flutter Dev."
+        feedback="Good Services, Hardworking Person"
       />
       <ClientReviewCard
         image="https://scontent.fixc8-3.fna.fbcdn.net/v/t1.6435-9/119526191_189149019376225_3116269047404077355_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=RLTucYDS-I4Q7kNvgEE7CF-&_nc_ht=scontent.fixc8-3.fna&oh=00_AYCOiY83S3QA5tduHkPSWFO-E3S9D-lz8Qu9vWPQms6JsA&oe=666FE5D4"
         user="Nandu"
         role="stone crushing plant owner."
+        feedback="Efficient and reliable service. Deepak is very professional."
       />
     </Carousel>
   );
